@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+
+html, body, #root {
+  overflow-x: hidden; /* Evita desbordes horizontales */
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.contenido {
+  flex: 1;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+
+
+
+
+.papiro {
+  background-color: #fef3c7; /* color crema claro */
+  border: 3px solid #d6a86c; /* borde color pergamino antiguo */
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow:
+    inset 0 0 15px rgba(0, 0, 0, 0.1),
+    0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  font-family: 'Georgia', serif;
+  color: #3b2f2f;
+  line-height: 1.6;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 28px,
+    rgba(0, 0, 0, 0.05) 29px
+  ); /* líneas suaves tipo manuscrito */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.banner {
+  width: 100%;
+  height: 25vh; /* ajustable */
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 40px rgba(200, 200, 255, 0.4), inset 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner p {
+  font-family: 'Cinzel', serif; /* estilo majestuoso */
+  font-size: 2rem;
+  color: #fff;
+  text-shadow:
+    0 0 5px #000,
+    0 0 10px #444,
+    0 0 20px rgba(255, 255, 255, 0.6);
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+
+.wings {
+  position: absolute;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+  background-image: url('https://trabajo-wp.vercel.app/5.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.left-wing {
+  left: 10%;
+  transform: rotate(-15deg);
+}
+
+.right-wing {
+  right: 10%;
+  transform: rotate(15deg);
+}
+
+.El-Juicio{
+  max-width: 90%;
+}
