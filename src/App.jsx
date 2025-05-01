@@ -1,7 +1,8 @@
 import React from 'react'
 import './App.css'
-import { Link } from 'react-router-dom'
-import { useEffect, useState, useParams } from "react";
+import { Link, useParams } from 'react-router-dom'
+import { useEffect, useState } from "react";
+
 
 function App() {
 
