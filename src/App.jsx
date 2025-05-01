@@ -5,9 +5,24 @@ import { useEffect, useState } from "react";
 
 function App() {
 
+  const { segmento1, segmento2, segmento3 } = useParams();
+  const slug = segmento3 || segmento2 || segmento1;
+
+
+  if (slug) {
 
 
 
+    return (
+      <>
+     
+      </>
+    );
+  }
+
+
+
+  else {
   return (
     <>
 
@@ -25,7 +40,7 @@ function App() {
           <p>
          Ojala te encante todo lo que tenemos por ofrecerte lector!
           </p>
-          <img className='El-Juicio' src="/trrompet.jpg" alt="Noticias de todo tipo" />
+          <img class='El-Juicio' src="/trrompet.jpg" alt="Noticias de todo tipo" />
 
         </div>
 
@@ -34,5 +49,5 @@ function App() {
     </>
   );
 }
-
+}
 export default App
